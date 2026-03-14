@@ -1,0 +1,113 @@
+# ===========================
+# YOLO 项目通用忽略规则
+# ===========================
+
+# 数据集（体积过大）
+data/images/
+data/labels/
+data/*.cache
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.bmp
+data/**/*.tif
+
+# 训练输出（体积大，可重新生成）
+runs/
+ultralytics-main/runs/
+yolov5-7.0/runs/
+yolov7-main/runs/
+yolov7-ours/runs/
+yolov3-9.6.0/runs/
+
+# 预训练权重（可以下载，不需要上传）
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mlmodel
+*.tflite
+*.torchscript
+weight/
+weights/
+ultralytics-main/weight/
+yolov5-7.0/weights/
+
+# 大型压缩包
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 日志文件
+*.log
+logs/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 测试和覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# 特定项目的大文件
+yolov7-main/traced_model.pt
+yolov7-ours/traced_model.pt
+
+# 评估图像（可选，如果想保留训练结果就注释掉）
+# eva_img/*.png
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+
+# 系统文件
+.Spotlight-V100
+.Trashes
+desktop.ini
