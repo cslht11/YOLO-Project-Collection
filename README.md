@@ -1,6 +1,6 @@
 # YOLO 目标检测项目集合
 
-> 本仓库包含多个 YOLO 系列目标检测模型的源码和工具，涵盖 YOLOv3、YOLOv5、YOLOv7、YOLOv8 等主流版本。
+> 本仓库包含多个 YOLO 系列目标检测模型的源码和工具，涵盖 YOLOv3、YOLOv5、YOLOv6、YOLOv7、YOLOv8 以及 YOLOX 等主流版本。
 
 ---
 
@@ -24,6 +24,8 @@ YOLO_RAW/
 ├── ultralytics-main/         # YOLOv8 (Ultralytics 官方版本)
 ├── yolov3-9.6.0/             # YOLOv3 (v9.6.0)
 ├── yolov5-7.0/               # YOLOv5 (v7.0 官方版本)
+├── yolox/                    # YOLOX (0.3.0)
+├── yolov6/                   # YOLOv6 (0.4.1)
 ├── yolov7-main/              # YOLOv7 (官方版本)
 └── yolov7-ours/              # YOLOv7 (改进版本) ⭐
 ```
@@ -110,6 +112,22 @@ python ../draw_pic.py
 - **版本**: v9.6.0
 - **特点**: 结构简单，适合入门学习
 - **用途**: 教学、baseline 对比
+
+### 6. YOLOX (yolox)
+
+**anchor-free，工程化部署友好**
+
+- **版本**: 0.3.0
+- **特点**: anchor-free 设计、解耦检测头、SimOTA 标签分配
+- **部署**: 支持 NCNN / ONNX / TensorRT / OpenVINO 等
+
+### 7. YOLOv6 (yolov6)
+
+**工业级，训练推理高效**
+
+- **版本**: 0.4.1
+- **特点**: 面向工业应用，速度快，支持量化与多后端部署
+- **部署**: 支持 NCNN / TensorRT / ONNX 等
 
 ---
 
@@ -308,6 +326,8 @@ yolo export model=yolov8n.pt format=onnx
 
 - **ultralytics-main**: AGPL-3.0 / 商业许可
 - **yolov5-7.0**: AGPL-3.0 / 商业许可
+- **yolox**: Apache-2.0
+- **yolov6**: GPL-3.0
 - **yolov7-main**: GPL-3.0
 - **yolov7-ours**: （根据你的需求选择）
 
