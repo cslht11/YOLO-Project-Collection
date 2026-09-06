@@ -335,8 +335,8 @@ yolo export model=yolov8n.pt format=onnx
 
 ## 📧 联系方式
 
-- GitHub: [@chai1110](https://github.com/chai1110)
-- Email: chai011379@gmail.com
+- GitHub: [@cslht11](https://github.com/cslht11)
+- Email: heitieya@163.com
 
 ---
 
